@@ -2,25 +2,312 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Reportes Comunitarios Rivers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes Comunitarios Del Rio - Apodaca, Nuevo León</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .steps li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 50px;
+            position: relative;
+        }
+        
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-item strong {
+            min-width: 100px;
+            color: #667eea;
+        }
+        
+        .whatsapp-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+        
+        .whatsapp-button:hover {
+            transform: scale(1.05);
+            background: #20BD5C;
+        }
+        
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .type-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            
+            .steps li {
+                padding-left: 45px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Reportes Comunitarios Del rio</h1>
-    <p>Servicio independiente para reportar problemas de la comunidad.</p>
-    
-    <h2>¿Cómo funciona?</h2>
-    <ol>
-        <li>Envía un mensaje a nuestro WhatsApp</li>
-        <li>Describe el problema (alumbrado, baches, transporte, etc.)</li>
-        <li>Adjunta fotos o videos si es posible</li>
-        <li>Recibe confirmación y seguimiento</li>
-    </ol>
-    
-    <h2>Contacto</h2>
-    <p>WhatsApp: +52 8183699999</p>
-    <p>Email: pablo.delrio.multimedios@gmail.com</p>
-    
-    <h2>Aviso de Privacidad</h2>
-    <p>Tus datos se manejan de forma confidencial...</p>
+    <div class="container">
+        <header>
+            <h1>📱 Reportes Comunitarios Del Rio</h1>
+            <p>Servicio independiente para reportar problemas de la comunidad en Apodaca, Nuevo León</p>
+        </header>
+
+        <div class="card">
+            <h2>🎯 ¿Qué es este servicio?</h2>
+            <p>Reportes Comunitarios Del Rio es un servicio gratuito que permite a los ciudadanos de Apodaca reportar problemas en su comunidad de manera rápida y sencilla a través de WhatsApp.</p>
+            <p style="margin-top: 15px;">Nuestro objetivo es facilitar la comunicación entre los ciudadanos y ayudar a documentar las necesidades de la comunidad.</p>
+        </div>
+
+        <div class="card">
+            <h2>📝 ¿Cómo funciona?</h2>
+            <ol class="steps">
+                <li>
+                    <strong>Envía un mensaje a nuestro WhatsApp</strong><br>
+                    Contacta al número oficial y describe el problema que observas en tu comunidad.
+                </li>
+                <li>
+                    <strong>Describe el problema</strong><br>
+                    Cuéntanos sobre alumbrado público, baches, transporte, seguridad, o cualquier otro problema comunitario.
+                </li>
+                <li>
+                    <strong>Adjunta evidencia</strong><br>
+                    Si es posible, envía fotos o videos del problema para mejor documentación.
+                </li>
+                <li>
+                    <strong>Recibe confirmación</strong><br>
+                    Recibirás un número de folio y seguimiento de tu reporte.
+                </li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>🏘️ Tipos de reportes que puedes hacer</h2>
+            <div class="types-grid">
+                <div class="type-card">
+                    <strong>💡 Alumbrado Público</strong>
+                    <p>Lámparas fundidas o áreas sin iluminación</p>
+                </div>
+                <div class="type-card">
+                    <strong>🚧 Baches y Vialidad</strong>
+                    <p>Calles en mal estado o señalización faltante</p>
+                </div>
+                <div class="type-card">
+                    <strong>🚌 Transporte Público</strong>
+                    <p>Problemas con paradas o servicio de transporte</p>
+                </div>
+                <div class="type-card">
+                    <strong>🚮 Basura y Limpieza</strong>
+                    <p>Acumulación de basura o áreas que necesitan limpieza</p>
+                </div>
+                <div class="type-card">
+                    <strong>🏗️ Infraestructura</strong>
+                    <p>Banquetas rotas, coladeras tapadas, etc.</p>
+                </div>
+                <div class="type-card">
+                    <strong>🚨 Seguridad</strong>
+                    <p>Áreas que necesitan mayor vigilancia o iluminación</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📞 Contacto</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>WhatsApp:</strong>
+                    <span>+52 81 1389 4412</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <span>pablo.delrio.multimedios@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Ubicación:</strong>
+                    <span>Apodaca, Nuevo León, México</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Horario:</strong>
+                    <span>Reportes 24/7 - Respuestas en horario hábil</span>
+                </div>
+            </div>
+            
+            <center>
+                <a href="https://wa.me/528113894412?text=Hola,%20quiero%20hacer%20un%20reporte%20comunitario" class="whatsapp-button" target="_blank">
+                    💬 Enviar Reporte por WhatsApp
+                </a>
+            </center>
+        </div>
+
+        <div class="card">
+            <h2>🔒 Aviso de Privacidad</h2>
+            
+            <h3 style="margin-top: 20px; color: #764ba2;">AVISO DE PRIVACIDAD SIMPLIFICADO</h3>
+            
+            <p style="margin-top: 15px;"><strong>Pablo Del Rio - Reportes Comunitarios Del Rio</strong> es responsable del tratamiento de sus datos personales.</p>
+            
+            <h4 style="margin-top: 20px; color: #667eea;">DATOS QUE RECOPILAMOS:</h4>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Número de teléfono WhatsApp</li>
+                <li>Mensajes de texto relacionados con reportes</li>
+                <li>Fotografías y videos (únicamente si usted los comparte voluntariamente)</li>
+                <li>Ubicación aproximada (solo si usted la menciona en el reporte)</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px; color: #667eea;">FINALIDAD DEL TRATAMIENTO:</h4>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Recibir y dar seguimiento a reportes de problemas comunitarios</li>
+                <li>Documentar necesidades de la comunidad</li>
+                <li>Mejorar el servicio de reporte ciudadano</li>
+                <li>Generación de estadísticas anónimas para análisis comunitario</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px; color: #667eea;">PROTECCIÓN DE DATOS:</h4>
+            <p style="margin-top: 10px;">Sus datos personales NO se comparten con terceros sin su autorización expresa, excepto cuando sea requerido por autoridades competentes conforme a la ley.</p>
+            
+            <h4 style="margin-top: 20px; color: #667eea;">SUS DERECHOS (ARCO):</h4>
+            <p style="margin-top: 10px;">Conforme a la Ley Federal de Protección de Datos Personales en Posesión de Particulares (LFPDPPP), usted tiene derecho a:</p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>Acceder</strong> a sus datos personales que poseemos</li>
+                <li><strong>Rectificar</strong> sus datos en caso de ser inexactos o incompletos</li>
+                <li><strong>Cancelar</strong> sus datos cuando considere que no se requieren</li>
+                <li><strong>Oponerse</strong> al tratamiento de sus datos para fines específicos</li>
+            </ul>
+            
+            <p style="margin-top: 15px;">Para ejercer sus derechos ARCO, puede contactar a: <strong>pablo.delrio.multimedios@gmail.com</strong></p>
+            
+            <h4 style="margin-top: 20px; color: #667eea;">REVOCACIÓN DEL CONSENTIMIENTO:</h4>
+            <p style="margin-top: 10px;">Usted puede dejar de usar el servicio en cualquier momento enviando la palabra "STOP" o "BAJA" por WhatsApp. Sus datos personales serán eliminados de nuestros sistemas en un plazo máximo de 30 días naturales.</p>
+            
+            <h4 style="margin-top: 20px; color: #667eea;">CONSENTIMIENTO:</h4>
+            <p style="margin-top: 10px;">Al enviar un mensaje a este servicio de WhatsApp, usted manifiesta su consentimiento expreso para el tratamiento de sus datos personales conforme a lo establecido en este aviso de privacidad.</p>
+            
+            <h4 style="margin-top: 20px; color: #667eea;">MODIFICACIONES AL AVISO:</h4>
+            <p style="margin-top: 10px;">Nos reservamos el derecho de modificar este aviso de privacidad. Las modificaciones estarán disponibles en este sitio web y se considerarán informadas a través de este medio.</p>
+            
+            <p style="margin-top: 20px;"><strong>Responsable:</strong> Pablo Del Rio<br>
+            <strong>RFC:</strong> RIMP811213NE3<br>
+            <strong>Domicilio:</strong> AV LOS ENCINOS 114, Apodaca, Nuevo León 66635, México<br>
+            <strong>Email:</strong> pablo.delrio.multimedios@gmail.com<br>
+            <strong>Última actualización:</strong> 24 de octubre de 2025</p>
+        </div>
+
+        <footer>
+            <p><strong>Reportes Comunitarios Del Rio</strong></p>
+            <p>Servicio independiente de reporte ciudadano</p>
+            <p>Apodaca, Nuevo León, México</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">© 2025 Pablo Del Rio. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>
